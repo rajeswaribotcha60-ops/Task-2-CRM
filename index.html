@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Lead Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Client Lead Management System (Mini CRM)</h1>
+
+        <form id="leadForm">
+            <input type="text" id="name" placeholder="Client Name" required>
+
+            <input type="email" id="email" placeholder="Email" required>
+
+            <input type="text" id="source" placeholder="Lead Source" required>
+
+            <select id="status">
+                <option>New</option>
+                <option>Contacted</option>
+                <option>Converted</option>
+            </select>
+
+            <textarea id="notes" placeholder="Notes"></textarea>
+
+            <button type="submit">Add Lead</button>
+        </form>
+
+        <h2>Lead List</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Rajeswari Botcha</th>
+                    <th>rajeswaribotcha60@gmail.com</th>
+                    <th>LinkedIn</th>
+                    <th>new</th>
+                    <th>x in web development interns</th>
+                </tr>
+            </thead>
+            <tbody id="leadTable">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
