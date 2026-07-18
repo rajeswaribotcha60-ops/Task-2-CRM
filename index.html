@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini CRM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Client Lead Management System (Mini CRM)</h1>
+
+    <p>
+        Manage client leads, track status, and maintain follow-ups easily.
+    </p>
+
+    <!-- FORM -->
+    <div class="form-box">
+        <input id="name" placeholder="Client Name">
+        <input id="email" placeholder="Email">
+        <input id="source" placeholder="Lead Source">
+
+        <select id="status">
+            <option value="new">New</option>
+            <option value="contacted">Contacted</option>
+            <option value="converted">Converted</option>
+        </select>
+
+        <textarea id="notes" placeholder="Notes"></textarea>
+
+        <button onclick="addLead()">Add Lead</button>
+    </div>
+
+    <!-- TABLE -->
+    <h2>Lead List</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="data"></tbody>
+    </table>
+
+    <!-- PROFILE -->
+    <div class="profile">
+        <hr>
+        <h3>Developed By</h3>
+
+        <p><b>Name:</b> Rajeswari Botcha</p>
+
+        <p><b>Email:</b> rajeshwaribotcha60@gmail.com</p>
+
+        <p>
+            <b>LinkedIn:</b> 
+            <a href="https://www.linkedin.com/in/rajeswari-botcha">
+                View Profile
+            </a>
+        </p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
